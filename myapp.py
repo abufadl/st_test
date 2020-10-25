@@ -33,3 +33,8 @@ if st.checkbox('Show dataframe'):
 
     st.line_chart(chart_data)
     
+option = st.selectbox(
+    'Which number do you like best?',
+     df['first column'])
+
+'You selected: ', option
