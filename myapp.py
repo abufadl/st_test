@@ -33,6 +33,18 @@ if st.checkbox('Show dataframe'):
 
     st.line_chart(chart_data)
     
+"""
+# My first app
+Here's our first attempt at using data to create a table:
+"""
+
+df = pd.DataFrame({
+  'first column': [1, 2, 3, 4],
+  'second column': [10, 20, 30, 40]
+})
+
+df
+ 
 option = st.selectbox(
     'Which number do you like best?',
      df['first column'])
