@@ -51,3 +51,9 @@ option = st.sidebar.selectbox(
      df['first column'])
 
 'You selected: ', option
+
+st.sidebar.markdown("""
+## My great app
+"""
+)
+st.sidebar.slider(0,10)
