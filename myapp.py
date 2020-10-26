@@ -58,7 +58,7 @@ st.sidebar.markdown("""
 ## My great app
 """
 )
-#st.sidebar.slider(0,10) # error sytax?
+st.sidebar.slider("slider:", 0,10) # error sytax?
 
 #columns
 left_column, right_column = st.beta_columns(2)
