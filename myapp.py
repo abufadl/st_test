@@ -44,8 +44,9 @@ df = pd.DataFrame({
 })
 
 df
- 
-option = st.selectbox(
+
+# place in sidebar
+option = st.sidebar.selectbox(
     'Which number do you like best?',
      df['first column'])
 
