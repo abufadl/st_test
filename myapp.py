@@ -64,7 +64,7 @@ pressed = left_column.button('Press me?')
 if pressed:
     right_column.write("You pressed my neighbor!")
     pressed = False
- else:
+else:
     right_column.write("Dare you press my neighbor!")
 
 expander = st.beta_expander("FAQ")
