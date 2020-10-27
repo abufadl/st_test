@@ -37,7 +37,9 @@ st.subheader('Map of all pickups')
 st.map(data)
 
 # see also st.pydeck_chart
-hour_to_filter = 17
+#hour_to_filter = 17 # hard coded
+# use slider
+hour_to_filter = st.slider('hour', 0, 23, 17)  # min: 0h, max: 23h, default: 17h
 filtered_data = data[data[DATE_COLUMN].dt.hour == hour_to_filter]
 st.subheader(f'Map of all pickups at {hour_to_filter}:00')
 st.map(filtered_data)
