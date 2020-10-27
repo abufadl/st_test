@@ -25,8 +25,9 @@ data = load_data(10000)
 data_load_state.text('Loading data...done!')
 
 # display
-st.subheader('Raw data')
-st.write(data)
+if st.sidebar.checkbox('Show raw data'):
+    st.subheader('Raw data')
+    st.write(data)
 
 st.subheader('Number of pickups by hour')
 hist_values = np.histogram(
