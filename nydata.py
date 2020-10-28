@@ -55,3 +55,14 @@ st.map(filtered_data)
 x = st.sidebar.slider('x')  # 👈 this is a widget
 st.write(x, 'squared is', x * x)
 
+# Add a selectbox to the sidebar:
+how_contact = st.sidebar.selectbox(
+    'Contact method:',
+    ('Email', 'Home phone', 'Mobile phone')
+)
+
+# Add a slider to the sidebar:
+my_range = st.sidebar.slider(
+    'Select a range of values',
+    0.0, 100.0, (25.0, 75.0)
+)
