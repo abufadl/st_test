@@ -32,8 +32,8 @@ if st.sidebar.checkbox('Show raw data'):
     st.write(data)
     # custom style interactive
     st.dataframe(data.style.highlight_max(axis=0))
-    # static table
-    st.table(data)
+    # static table (all rows displayed)
+    #st.table(data)
 
 st.subheader('Number of pickups by hour')
 hist_values = np.histogram(
@@ -50,3 +50,8 @@ hour_to_filter = st.sidebar.slider('hour', 0, 23, 17)  # min: 0h, max: 23h, defa
 filtered_data = data[data[DATE_COLUMN].dt.hour == hour_to_filter]
 st.subheader(f'Map of all pickups at {hour_to_filter}:00')
 st.map(filtered_data)
+
+# widgets
+x = st.sidebar.slider('x')  # 👈 this is a widget
+st.write(x, 'squared is', x * x)
+
