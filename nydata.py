@@ -29,6 +29,7 @@ data_load_state.text('Loading data...done!')
 if st.sidebar.checkbox('Show raw data'):
     st.subheader('Raw data')
     st.write(data)
+    st.dataframe(data.style.highlight_max(axis=0))
 
 st.subheader('Number of pickups by hour')
 hist_values = np.histogram(
