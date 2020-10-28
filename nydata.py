@@ -141,3 +141,5 @@ if genre == 'Comedy':
 else:
     st.write("You didn't select comedy.")
 
+mytext = st.text_input('review', '', max_chars=25)
+st.write('The review is', mytext)
