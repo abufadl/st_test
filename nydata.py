@@ -1,3 +1,6 @@
+# cheat sheet https://share.streamlit.io/daniellewisdl/streamlit-cheat-sheet/app.py 
+# https://docs.streamlit.io/en/stable/index.html
+
 import streamlit as st
 import pandas as pd
 import numpy as np
