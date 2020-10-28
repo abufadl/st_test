@@ -76,4 +76,5 @@ with right_column:
     chosen = st.radio(
         'Sorting hat',
         ("Gryffindor", "Ravenclaw", "Hufflepuff", "Slytherin"))
-    st.write(f"You are in {chosen} house!")
+    
+st.write(f"You are in {chosen} house!")
