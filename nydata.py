@@ -67,7 +67,7 @@ my_range = st.sidebar.slider(
     0.0, 100.0, (25.0, 75.0)
 )
 
-left_column, right_column = st.beta_columns(2)
+left_column, right_column = st.sidebar.beta_columns(2)
 # You can use a column just like st.sidebar:
 left_column.button('Press me!')
 
