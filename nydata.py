@@ -155,3 +155,10 @@ txt = st.text_area('Text to analyze', '''
      was the spring of hope, it was the winter of despair, (...)
      ''')
 st.write('Sentiment:', run_sentiment_analysis(txt))
+
+# stop
+name = st.text_input('Name')
+if not name:
+    st.warning('Please input a name.')
+    st.stop()
+st.success('Thank you for inputting a name.')
